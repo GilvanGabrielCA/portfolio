@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
 
+
+/*Variaveis*/
 :root{
-    --cor-primaria: #000000;
-    --cor-secundaria: #f6f6f6;
-    --cor-terciaria: #22d4fd;
-    --cor-hover: #272727;
+    --cor-primaria: #F7F1E5;
+    --cor-secundaria: #DF2E38;
+    --cor-terciaria: #DF2E38;
+    --cor-hover: #FF8C8C;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
 }
 
+/*Reset*/
 *{
     margin: 0;
     padding: 0;
@@ -21,6 +24,7 @@ body{
     color: var(--cor-secundaria);
 }
 
+/*Canecalho*/
 .cabecalho{
     padding: 2% 0% 0% 15%;
 }
@@ -38,8 +42,14 @@ body{
     text-decoration: none;
 }
 
+/*Corpo*/
 .titulo-destaque{
     color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__lista{
+    list-style-type: disc;
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao{
@@ -104,6 +114,8 @@ body{
     width: 50%;
 }
 
+
+/*Rodape*/
 .rodape{
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
@@ -114,6 +126,8 @@ body{
     font-weight: 400;
 }
 
+
+/*Responsivo*/
 @media (max-width: 1200px) {
     .cabecalho{
         padding: 10%;
